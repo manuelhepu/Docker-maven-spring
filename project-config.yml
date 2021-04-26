@@ -1,0 +1,7 @@
+---
+config:
+  repo_type: maven
+  repo_name: hello-spring
+  author: mherrera
+  email: mherrera@viewnext.com
+  group_maintainers: DevOps

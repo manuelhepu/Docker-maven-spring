@@ -6,18 +6,10 @@ pipeline {
         
         stage('Build') {
             steps {
-                withGradle {
-                    sh 'chmod +x ./gradlew'
-                    sh './gradlew assemble'
-
-                }
+                echo "prueba"
             }
 
-            post {
-                success {
-                    archiveArtifacts 'build/libs/*.jar'
-                }
-            }
+ 
 
         }
         
@@ -28,6 +20,6 @@ pipeline {
 
        
 
-        }
+        
     }
 }
